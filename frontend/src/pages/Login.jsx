@@ -22,6 +22,7 @@ const Login = () => {
         }
       })
       .catch((error) => {
+        console.log(error);
         alert(error.message);
         setUsername("");
         setPassword("");

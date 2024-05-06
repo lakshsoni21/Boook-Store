@@ -2,6 +2,9 @@ import { Book } from "../../model/model.js";
 import axios from "axios";
 import { User } from "../../model/userSchema.js";
 
+import dotenv from "dotenv";
+dotenv.config();
+
 const GOOGLE_BOOKS_API = process.env.GOOGLE_BOOKS_API;
 const api_key = process.env.api_key;
 
