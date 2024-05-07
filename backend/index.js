@@ -23,6 +23,10 @@ mongoose
   .then(() => console.log("MongoDB connected successfully"))
   .catch((err) => console.error(err));
 
+app.get("/", (req, res) => {
+  res.json("Hello");
+} )
+
 app.use("/books", booksRoute);
 app.use("/users", userRoute);
 
