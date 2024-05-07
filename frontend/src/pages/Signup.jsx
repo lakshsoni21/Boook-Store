@@ -21,7 +21,7 @@ const Signup = () => {
 
     if (password === confirmPassword) {
       axios
-        .post("http://localhost:5555/users/signup", data)
+        .post("https://boook-store-api.vercel.app/users/signup", data)
         .then((res) => {
           alert("Success");
           navigate("/login");
