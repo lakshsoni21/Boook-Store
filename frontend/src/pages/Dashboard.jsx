@@ -47,7 +47,7 @@ const Dashboard = () => {
     };
     setLoading(true);
     axios
-      .get("http://localhost:5555/users/books", config)
+      .get("https://boook-store-api.vercel.app/users/books", config)
       .then((response) => {
         setBooks(response.data.data.books);
         setBooksToShow(response.data.data.books);
