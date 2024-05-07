@@ -14,7 +14,7 @@ const Login = () => {
       password: password,
     };
     axios
-      .post("http://localhost:5555/users/login", data)
+      .post("https://boook-store-api.vercel.app/users/login", data)
       .then((response) => {
         if (response.status == 200) {
           localStorage.setItem("token", response.data.token);
