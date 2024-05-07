@@ -28,7 +28,7 @@ const CreateBooks = () => {
     };
 
     axios
-      .post("http://localhost:5555/books", data, config)
+      .post("https://boook-store-api.vercel.app/books", data, config)
       .then(() => {
         setLoading(false);
         navigate("/users/dashboard");
