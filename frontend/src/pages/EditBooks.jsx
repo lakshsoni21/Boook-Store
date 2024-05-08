@@ -21,7 +21,7 @@ const EditBooks = () => {
     };
     setLoading(true);
     axios
-      .put(`https://boook-store-api.vercel.app/books/${id}`, newData)
+      .put(`https://boook-store-4lip.onrender.com/books/${id}`, newData)
       .then(() => {
         setLoading(false);
         alert("Data Edited Successfully");
@@ -34,7 +34,7 @@ const EditBooks = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`https://boook-store-api.vercel.app/books/${id}`)
+      .get(`https://boook-store-4lip.onrender.com/books/${id}`)
       .then((response) => {
         setTitle(response.data.title);
         setAuthor(response.data.author);
