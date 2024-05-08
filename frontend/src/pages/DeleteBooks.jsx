@@ -14,7 +14,7 @@ const DeleteBooks = () => {
 
     setLoading(true);
 
-    axios.delete(`https://boook-store-api.vercel.app/books/${id}`)
+    axios.delete(`https://boook-store-4lip.onrender.com/books/${id}`)
     .then(() => {
       alert("Book Deleted Successfully");
       setLoading(false);
