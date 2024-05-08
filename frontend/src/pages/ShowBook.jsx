@@ -16,7 +16,7 @@ const ShowBook = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`https://boook-store-api.vercel.app/books/${id}`)
+      .get(`https://boook-store-4lip.onrender.com/books/${id}`)
       .then((response) => {
         setBook(response.data);
         setLoading(false);
