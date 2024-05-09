@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Spinner from "../components/Spinner";
+import { Shimmer } from "../components/Shimmer";
 import { Link, useNavigate } from "react-router-dom";
 
 // Icons
@@ -134,7 +134,7 @@ const Dashboard = () => {
       </div>
 
       {loading ? (
-        <Spinner />
+        <Shimmer />
       ) : booksToShow.length == 0 && !search ? (
         <div>
           <h1 className="text-xl font-semibold text-center">
