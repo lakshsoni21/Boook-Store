@@ -28,6 +28,7 @@ const Signup = () => {
         })
         .catch((error) => {
           console.log(error);
+          alert(error?.response?.data?.message);
         });
     } else {
       alert("Password fields didn't match");
