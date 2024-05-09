@@ -106,7 +106,7 @@ const Signup = () => {
             </div>
             <div>
               <button
-                className="py-2 px-10 rounded-md text-center border-2 border-white text-white hover:cursor-pointer"
+                className="py-2 px-10 rounded-md text-center border-2 border-white text-white hover:cursor-pointer hover:bg-white hover:text-black"
                 onClick={() => {
                   handleSignUp();
                 }}
