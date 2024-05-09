@@ -5,3 +5,33 @@
 .gradient-custom {
     background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
 }
+
+/*Shimmer UI */
+.maincontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cardShimmer{
+    width: 300px;
+    padding: 2px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    height: 500px;
+}
+
+.cardShimmer .Top{
+    height: 70%;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    margin: 5px;
+    border-radius: 10px;
+    animation: shimmer 2s infinite;
+}
+
+.cardShimmer .bottom{
+    height: 20%;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    margin: 5px;
+    border-radius: 10px;
+}
