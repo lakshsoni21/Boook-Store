@@ -9,6 +9,8 @@ dotenv.config();
 const PORT = process.env.PORT;
 const mongoDBURL = process.env.mongoDBURL;
 
+console.log("Mongo DB URL -> ", mongoDBURL);
+
 const app = express();
 
 app.use(express.json());
