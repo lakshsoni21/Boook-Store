@@ -31,7 +31,9 @@ const ShowBook = () => {
       <BackButton />
       <h1 className="mt-5 text-3xl">Details of the Book</h1>
       {Loading ? (
-        <Spinner />
+        <div className="flex justify-center items-center">
+          <Spinner />
+        </div>
       ) : (
         <div className="mt-6 font-semibold">
           <h1 className="text-2xl">
