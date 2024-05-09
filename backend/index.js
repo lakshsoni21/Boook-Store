@@ -18,10 +18,7 @@ app.use(cors());
 
 // Initiliaze the mongo DB
 mongoose
-  .connect(mongoDBURL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect(mongoDBURL)
   .then(() => console.log("MongoDB connected successfully"))
   .catch((err) => console.error(err));
 
